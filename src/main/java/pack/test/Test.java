@@ -18,6 +18,8 @@ import java.sql.SQLException;
  * Servlet implementation class Test
  */
 public class Test extends HttpServlet {
+	
+	
 	private static final long serialVersionUID = 1L;
 	
 	public static final String DATABASE = "jdbc:mysql://mysql:3306/test_mvc_crud";
