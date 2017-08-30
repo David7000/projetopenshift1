@@ -38,7 +38,7 @@ public class Test extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		
+		 Connection connexion = null;
                 Statement statement = null;
                 ResultSet resultat = null;
 		
@@ -47,7 +47,7 @@ public class Test extends HttpServlet {
                  } catch (ClassNotFoundException e) { }
  
 		
-		 Connection connexion = DriverManager.getConnection(DATABASE, LOGIN, PASSWORD);
+		connexion = DriverManager.getConnection(DATABASE, LOGIN, PASSWORD);
 		
 		String login1 ="";
 		
