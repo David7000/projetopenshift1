@@ -47,12 +47,10 @@ public class Test extends HttpServlet {
                  } catch (ClassNotFoundException e) { }
  
 		
-		connexion = DriverManager.getConnection(DATABASE, LOGIN, PASSWORD);
-		
 		String login1 ="";
 		
 		try {
-                    
+                     connexion = DriverManager.getConnection(DATABASE, LOGIN, PASSWORD);
                      statement = connexion.createStatement();
                      resultat = statement.executeQuery("SELECT  login FROM client;");
 
